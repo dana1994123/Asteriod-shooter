@@ -27,6 +27,13 @@ We will be using XCode (version 12.5.1 for the SDK), Swift UI interface, UIkit A
 
 Project Coloring theme : 
 
+<img width="878" alt="Screen Shot 2021-11-11 at 7 00 13 PM" src="https://user-images.githubusercontent.com/68449449/141385875-63351509-b8c1-4cfa-9536-afbca3343d11.png">
+
+dark blue :#063852. rgb(6,56,82)
+grey : #636466.   rgb(99,100,102)
+blue :#1E9BDE.  rgb(30,155,222)
+yellow : #FFC100   rgb(255,193,0)
+light grey :#E6EBED  rgb(230,235,237)
 
 
 
