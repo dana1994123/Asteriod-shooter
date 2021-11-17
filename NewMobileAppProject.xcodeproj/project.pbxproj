@@ -21,6 +21,10 @@
 		370CFF53273DE4E700DFB1BE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CFF52273DE4E700DFB1BE /* ComplicationController.swift */; };
 		370CFF55273DE4E700DFB1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370CFF54273DE4E700DFB1BE /* Assets.xcassets */; };
 		370CFF58273DE4E700DFB1BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370CFF57273DE4E700DFB1BE /* Preview Assets.xcassets */; };
+		37698B162743790700076781 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698B152743790700076781 /* Colors.swift */; };
+		37D8F6422744908C00DBB1D5 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6412744908B00DBB1D5 /* HomeUIView.swift */; };
+		37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6432744911100DBB1D5 /* ScoreBoard.swift */; };
+		37E851FA2743750300B1F827 /* ComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E851F92743750300B1F827 /* ComponentModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,10 @@
 		370CFF57273DE4E700DFB1BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		370CFF59273DE4E700DFB1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370CFF5A273DE4E700DFB1BE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		37698B152743790700076781 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		37D8F6412744908B00DBB1D5 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
+		37D8F6432744911100DBB1D5 /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
+		37E851F92743750300B1F827 /* ComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +136,10 @@
 		370CFF2C273DE4E500DFB1BE /* NewMobileAppProject */ = {
 			isa = PBXGroup;
 			children = (
+				37D8F6402744906F00DBB1D5 /* Views */,
+				37698B14274378F700076781 /* Classes */,
+				37E851F8274374EE00B1F827 /* Modifier  */,
 				370CFF2D273DE4E500DFB1BE /* NewMobileAppProjectApp.swift */,
-				370CFF2F273DE4E500DFB1BE /* ContentView.swift */,
 				370CFF31273DE4E600DFB1BE /* Assets.xcassets */,
 				370CFF36273DE4E600DFB1BE /* Info.plist */,
 				370CFF33273DE4E600DFB1BE /* Preview Content */,
@@ -176,6 +186,32 @@
 				370CFF57273DE4E700DFB1BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37698B14274378F700076781 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37698B152743790700076781 /* Colors.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		37D8F6402744906F00DBB1D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				370CFF2F273DE4E500DFB1BE /* ContentView.swift */,
+				37D8F6412744908B00DBB1D5 /* HomeUIView.swift */,
+				37D8F6432744911100DBB1D5 /* ScoreBoard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37E851F8274374EE00B1F827 /* Modifier  */ = {
+			isa = PBXGroup;
+			children = (
+				37E851F92743750300B1F827 /* ComponentModifier.swift */,
+			);
+			path = "Modifier ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E851FA2743750300B1F827 /* ComponentModifier.swift in Sources */,
+				37698B162743790700076781 /* Colors.swift in Sources */,
+				37D8F6422744908C00DBB1D5 /* HomeUIView.swift in Sources */,
+				37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */,
 				370CFF30273DE4E500DFB1BE /* ContentView.swift in Sources */,
 				370CFF2E273DE4E500DFB1BE /* NewMobileAppProjectApp.swift in Sources */,
 			);
