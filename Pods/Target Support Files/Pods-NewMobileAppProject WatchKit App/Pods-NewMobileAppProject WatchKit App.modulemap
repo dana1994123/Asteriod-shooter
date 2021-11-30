@@ -1,0 +1,6 @@
+framework module Pods_NewMobileAppProject_WatchKit_App {
+  umbrella header "Pods-NewMobileAppProject WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}

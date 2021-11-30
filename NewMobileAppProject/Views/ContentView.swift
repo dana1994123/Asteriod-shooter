@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var textEdit : String = ""
+    @EnvironmentObject var fireDBHelper : FireDBHelper
     var body: some View {
         VStack{
             //all the modifier are under modifier Group
@@ -20,6 +21,7 @@ struct ContentView: View {
                 TextField( "Enter your Name" , text: self.$textEdit).modifier(TextFieldModifier())
                 Button(action:{
                     print("click me")
+                    self.addScore()
                 }){
                     Text("Click").modifier(MainAppButtonModifier())
                 }
@@ -28,10 +30,23 @@ struct ContentView: View {
                 }){
                     Text("Click 2").modifier(AppButtonModifier())
                 }
+                List{
+                    ForEach(self.fireDBHelper.scoreLit.enumerated().map({$0}), id : \.element.self){index, currentScore in
+                        Text(currentScore.name)
+                        Text(String(currentScore.score))
+                        
+                    }
+                }
                 
                 
             }//vstack
+        }.onAppear(){
+            self.fireDBHelper.getAllScore()
         }//hstack
+    }
+    private func addScore (){
+        print("adding scores to the firebase")
+        self.fireDBHelper.insertScore(newScore: Score(name: "Dana Aljamal", score: 20))
     }
 }
 
