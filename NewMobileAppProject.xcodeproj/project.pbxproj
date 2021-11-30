@@ -22,9 +22,9 @@
 		370CFF55273DE4E700DFB1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370CFF54273DE4E700DFB1BE /* Assets.xcassets */; };
 		370CFF58273DE4E700DFB1BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370CFF57273DE4E700DFB1BE /* Preview Assets.xcassets */; };
 		37698B162743790700076781 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698B152743790700076781 /* Colors.swift */; };
+		378CEC08275601E300A5541C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378CEC07275601E300A5541C /* SwiftUIView.swift */; };
 		37D8F6422744908C00DBB1D5 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6412744908B00DBB1D5 /* HomeUIView.swift */; };
 		37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6432744911100DBB1D5 /* ScoreBoard.swift */; };
-		37E851FA2743750300B1F827 /* ComponentModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E851F92743750300B1F827 /* ComponentModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,9 +90,9 @@
 		370CFF59273DE4E700DFB1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370CFF5A273DE4E700DFB1BE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		37698B152743790700076781 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		378CEC07275601E300A5541C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		37D8F6412744908B00DBB1D5 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
 		37D8F6432744911100DBB1D5 /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
-		37E851F92743750300B1F827 /* ComponentModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +136,9 @@
 		370CFF2C273DE4E500DFB1BE /* NewMobileAppProject */ = {
 			isa = PBXGroup;
 			children = (
+				378CEC06275601D500A5541C /* New Group */,
 				37D8F6402744906F00DBB1D5 /* Views */,
 				37698B14274378F700076781 /* Classes */,
-				37E851F8274374EE00B1F827 /* Modifier  */,
 				370CFF2D273DE4E500DFB1BE /* NewMobileAppProjectApp.swift */,
 				370CFF31273DE4E600DFB1BE /* Assets.xcassets */,
 				370CFF36273DE4E600DFB1BE /* Info.plist */,
@@ -196,6 +196,14 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		378CEC06275601D500A5541C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				378CEC07275601E300A5541C /* SwiftUIView.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		37D8F6402744906F00DBB1D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,14 +212,6 @@
 				37D8F6432744911100DBB1D5 /* ScoreBoard.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		37E851F8274374EE00B1F827 /* Modifier  */ = {
-			isa = PBXGroup;
-			children = (
-				37E851F92743750300B1F827 /* ComponentModifier.swift */,
-			);
-			path = "Modifier ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,9 +344,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E851FA2743750300B1F827 /* ComponentModifier.swift in Sources */,
 				37698B162743790700076781 /* Colors.swift in Sources */,
 				37D8F6422744908C00DBB1D5 /* HomeUIView.swift in Sources */,
+				378CEC08275601E300A5541C /* SwiftUIView.swift in Sources */,
 				37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */,
 				370CFF30273DE4E500DFB1BE /* ContentView.swift in Sources */,
 				370CFF2E273DE4E500DFB1BE /* NewMobileAppProjectApp.swift in Sources */,
