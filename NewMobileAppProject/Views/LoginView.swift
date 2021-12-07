@@ -91,7 +91,7 @@ struct LoginView: View {
         
 //we need to iterate through the list and then it is is matching our record we will return true and navigate
         for n in self.fireDBHelper.scoreLit {
-            if (n.userName == "Dana" ){
+            if (n.userName == self.username && n.password == self.password ){
                 print(#function)
                 return true
             }
