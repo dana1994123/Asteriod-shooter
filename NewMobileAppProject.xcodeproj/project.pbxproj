@@ -31,6 +31,7 @@
 		37D8F6422744908C00DBB1D5 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6412744908B00DBB1D5 /* HomeUIView.swift */; };
 		37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6432744911100DBB1D5 /* ScoreBoard.swift */; };
 		6A143504275EE29F00C3230D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A143503275EE29F00C3230D /* LoginView.swift */; };
+		6A143506275EE50B00C3230D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A143505275EE50B00C3230D /* User.swift */; };
 		7170D627275BE14200FF35AF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D626275BE14200FF35AF /* FirebaseFirestoreSwift-Beta */; };
 		7170D629275BE14200FF35AF /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D628275BE14200FF35AF /* FirebaseStorageSwift-Beta */; };
 		7170D62B275BE14200FF35AF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D62A275BE14200FF35AF /* FirebaseFirestore */; };
@@ -109,6 +110,7 @@
 		37D8F6412744908B00DBB1D5 /* HomeUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUIView.swift; sourceTree = "<group>"; };
 		37D8F6432744911100DBB1D5 /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
 		6A143503275EE29F00C3230D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6A143505275EE50B00C3230D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 			children = (
 				37698B152743790700076781 /* Colors.swift */,
 				378C34522756997E00B1C058 /* Score.swift */,
+				6A143505275EE50B00C3230D /* User.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */,
 				370CFF30273DE4E500DFB1BE /* ContentView.swift in Sources */,
 				378C34572756A0F500B1C058 /* ScoreUIView.swift in Sources */,
+				6A143506275EE50B00C3230D /* User.swift in Sources */,
 				6A143504275EE29F00C3230D /* LoginView.swift in Sources */,
 				378C345527569A0200B1C058 /* File.swift in Sources */,
 				370CFF2E273DE4E500DFB1BE /* NewMobileAppProjectApp.swift in Sources */,
