@@ -13,7 +13,6 @@ struct Header1: ViewModifier {
         return content
             .foregroundColor(colors.redCus)
             .font(.system(size: 60))
-            .padding(10)
     }
 }
 
@@ -24,7 +23,6 @@ struct Header2: ViewModifier {
             .foregroundColor(colors.redCus)
             .font(.title)
             .frame(width: 130, height: 30,alignment: .center)
-            .padding(10)
     }
 }
 struct Header3: ViewModifier {
@@ -34,7 +32,6 @@ struct Header3: ViewModifier {
             .foregroundColor(self.colors.DarkBlueCus)
             .font(.system(size: 20))
             .frame(width: 130, height: 30,alignment: .center)
-            .padding(10)
     }
 }
 struct Error: ViewModifier {
@@ -42,9 +39,8 @@ struct Error: ViewModifier {
     func body(content : Content) ->some View{
         return content
             .foregroundColor(Color.red)
-            .font(.system(size: 20))
-            .frame(width: 130, height: 30,alignment: .center)
-            .padding(10)
+            .font(.system(size: 15))
+            .frame(width: 500, height: 10,alignment: .center)
     }
 }
 struct TextFieldModifier: ViewModifier {
@@ -65,7 +61,6 @@ struct AppButtonModifier: ViewModifier {
             .background(colors.redCus)
             .foregroundColor(.white)
             .cornerRadius(10)
-            .padding(.trailing,50)
     }
 }
 struct MainAppButtonModifier: ViewModifier {
@@ -76,7 +71,5 @@ struct MainAppButtonModifier: ViewModifier {
             .background(colors.redCus)
             .foregroundColor(.white)
             .cornerRadius(10)
-            .padding(.bottom,20)
-            .padding(.horizontal, 10)
     }
 }

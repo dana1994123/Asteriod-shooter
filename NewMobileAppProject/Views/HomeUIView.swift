@@ -41,7 +41,7 @@ struct HomeUIView: View {
                                 Text("Score Board").modifier(AppButtonModifier())
                             }
                         
-                        }.frame(width: 700, height: 300, alignment: .bottom).padding(.bottom , 10)
+                        }.frame(width: 700, height: 200, alignment: .bottom).padding(.bottom , 10)
                 }//Vstack
             }//zstack
             .navigationBarHidden(true)
