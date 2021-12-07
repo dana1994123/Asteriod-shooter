@@ -11,8 +11,8 @@ struct Header1: ViewModifier {
     let colors = Colors()
     func body(content : Content) ->some View{
         return content
-            .foregroundColor(self.colors.DarkBlueCus)
-            .font(.system(size: 70))
+            .foregroundColor(colors.redCus)
+            .font(.system(size: 60))
             .padding(10)
     }
 }
@@ -21,7 +21,7 @@ struct Header2: ViewModifier {
     let colors = Colors()
     func body(content : Content) ->some View{
         return content
-            .foregroundColor(self.colors.DarkBlueCus)
+            .foregroundColor(colors.redCus)
             .font(.title)
             .frame(width: 130, height: 30,alignment: .center)
             .padding(10)
@@ -51,8 +51,7 @@ struct TextFieldModifier: ViewModifier {
     let colors = Colors()
     func body(content : Content) ->some View{
         return content
-            .foregroundColor(colors.LightBlueCus)
-            .frame(width: 300, height: 30)
+            .frame(width: 400, height: 20)
             .padding(10)
             .overlay(RoundedRectangle(cornerRadius: 10).stroke(colors.yellowCus, lineWidth: 2))
 
@@ -62,7 +61,7 @@ struct AppButtonModifier: ViewModifier {
     let colors = Colors()
     func body(content : Content) ->some View{
         return content
-            .frame(width: 120, height: 50)
+            .frame(width: 150, height: 50)
             .background(colors.redCus)
             .foregroundColor(.white)
             .cornerRadius(10)
@@ -70,10 +69,11 @@ struct AppButtonModifier: ViewModifier {
     }
 }
 struct MainAppButtonModifier: ViewModifier {
+    let colors = Colors()
     func body(content : Content) ->some View{
         return content
             .frame(width: 300, height: 50,alignment: .center)
-            .background(Color.blue)
+            .background(colors.redCus)
             .foregroundColor(.white)
             .cornerRadius(10)
             .padding(.bottom,20)
