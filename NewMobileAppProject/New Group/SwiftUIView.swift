@@ -59,10 +59,11 @@ struct TextFieldModifier: ViewModifier {
     }
 }
 struct AppButtonModifier: ViewModifier {
+    let colors = Colors()
     func body(content : Content) ->some View{
         return content
             .frame(width: 120, height: 50)
-            .background(Color.orange)
+            .background(colors.redCus)
             .foregroundColor(.white)
             .cornerRadius(10)
             .padding(.trailing,50)

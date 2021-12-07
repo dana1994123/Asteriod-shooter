@@ -10,6 +10,7 @@ import SwiftUI
 
 class Colors: ObservableObject {
     @Published var yellowCus = Color("yellowCus")
+    @Published var redCus = Color("red")
     @Published var DarkBlueCus = Color("DarkBlueCus")
     @Published var LightBlueCus = Color("LightBlueCus")
     @Published var LightGreyCus = Color("LightGreyCus")
