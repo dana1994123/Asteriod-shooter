@@ -12,6 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var fireDBHelper : FireDBHelper
     var body: some View {
         VStack{
+            //LoginView()
             HomeUIView()
 //            //all the modifier are under modifier Group
 //            Text("I'm title 1").modifier(Header1())

@@ -28,7 +28,7 @@ struct LoginView: View {
                         .foregroundColor(Color.white)
                 }
                 .padding()
-                .background(Color("CustomYellow"))
+                .background(Color("yellowCus"))
                 .cornerRadius(10)
                 
                 HStack {
@@ -39,7 +39,7 @@ struct LoginView: View {
                         .foregroundColor(Color.white)
                 }
                 .padding()
-                .background(Color("CustomYellow"))
+                .background(Color("yellowCus"))
                 .cornerRadius(10)
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
