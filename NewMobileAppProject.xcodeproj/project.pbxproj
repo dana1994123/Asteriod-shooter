@@ -172,7 +172,6 @@
 				378C344F2756951F00B1C058 /* Helper  */,
 				378CEC06275601D500A5541C /* New Group */,
 				37D8F6402744906F00DBB1D5 /* Views */,
-				37698B14274378F700076781 /* Classes */,
 				370CFF2D273DE4E500DFB1BE /* NewMobileAppProjectApp.swift */,
 				370CFF31273DE4E600DFB1BE /* Assets.xcassets */,
 				370CFF36273DE4E600DFB1BE /* Info.plist */,
@@ -257,6 +256,7 @@
 				37D8F6432744911100DBB1D5 /* ScoreBoard.swift */,
 				378C34562756A0F500B1C058 /* ScoreUIView.swift */,
 				6A143503275EE29F00C3230D /* LoginView.swift */,
+				37698B14274378F700076781 /* Classes */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -661,7 +661,7 @@
 				DEVELOPMENT_TEAM = WCVP4HWX4L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewMobileAppProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -684,7 +684,7 @@
 				DEVELOPMENT_TEAM = WCVP4HWX4L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NewMobileAppProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

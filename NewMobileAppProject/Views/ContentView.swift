@@ -12,8 +12,9 @@ struct ContentView: View {
     @EnvironmentObject var fireDBHelper : FireDBHelper
     var body: some View {
         VStack{
-            //LoginView()
-            HomeUIView()
+            LoginView()
+            
+            
 //            //all the modifier are under modifier Group
 //            Text("I'm title 1").modifier(Header1())
 //            Text("I'm title 2").modifier(Header2())
@@ -45,10 +46,12 @@ struct ContentView: View {
 //        }.onAppear(){
 //            self.fireDBHelper.getAllScore()
 //        }//hstack
-    }
-    private func addScore (){
-        print("adding scores to the firebase")
-        self.fireDBHelper.insertScore(newScore: Score(name: "Dana Aljamal", score: 20))
+    
+    
+//    func addScore (){
+//        print("adding scores to the firebase")
+//        self.fireDBHelper.insertScore(newScore: Score(name: "Dana Aljamal", score: 20))
+//    }
     }
 }
 

@@ -14,6 +14,8 @@ struct LoginView: View {
     @State private var checkingUser = false
     @State private var input = false
     
+    @State private var isShowingHomeView = false
+    
     
     @EnvironmentObject var fireDBHelper : FireDBHelper
     
@@ -21,16 +23,12 @@ struct LoginView: View {
     
     var body: some View {
         NavigationView{
-            
-        
         ZStack {
 //            RadialGradient(gradient: Gradient(colors: [.blue, .gray]), center: .center, startRadius: 100, endRadius: 470)
             VStack(spacing: CGFloat(verticalPadding)) {
                 Text("Asteroid Shooter").modifier(Header1())
 //                    .font(.title)
 //                    .foregroundColor(Color.black)
-                
-               
                 HStack {
                     Image(systemName: "person")
                         .foregroundColor(.secondary)
@@ -40,7 +38,6 @@ struct LoginView: View {
 //                .padding()
 //                .background(Color("yellowCus"))
 //                .cornerRadius(10)
-                
                 HStack {
                     Image(systemName: "key")
                         .resizable()
@@ -52,74 +49,34 @@ struct LoginView: View {
 //                .background(Color("yellowCus"))
 //                .cornerRadius(10)
                 HStack{
+                    
                     Text("\(self.error)").modifier(Error())
                 }
-                List{
-                                    ForEach(self.fireDBHelper.scoreLit.enumerated().map({$0}), id : \.element.self){index, currentScore in
-                                        Text(currentScore.userName)
-                                        Text(String(currentScore.score))
-                
-                                    }
-                                }
-                
-                
-                
-                
-                    Button(action:{
-                        //do the checking and then lookup the firebase and then validate the user then navigate to the HomeUIVIew
-                        
-                        self.input = self.checking()
+                NavigationLink(destination: HomeUIView(), isActive: $isShowingHomeView) { EmptyView() }
+                Button(action:{
+                    //do the checking and then lookup the firebase and then validate the user then navigate to the HomeUIVIew
+                    
+                    if(self.checking()){
                         //lookup the firebase
-                        
-                       
-                        
-//                        ForEach(self.fireDBHelper.scoreLit.enumerated().map({$0}), id : \.element.self){index, currentScore in
-////                            if currentScore.userName == self.username && currentScore.password == self.password {
-////                                Text("jbnjk.nm")
-////                                NavigationLink(destination: HomeUIView()){
-////                                    Text("Login")
-////
-////
-////                //                        if(self.checking()){
-////                                }.modifier(AppButtonModifier())
-////                                //self.input = true
-//
-////                            }
-//                            Text(currentScore.userName).foregroundColor(.red)
-//                        }
-                        
-                        
-                        
-                    }){
-                        Text("Login")
-                    }.modifier(AppButtonModifier())
-                    
-                    
+                        self.isShowingHomeView = self.lookupDataBase()
+                    }
+                }){
+                    Text("Login")
+                }.modifier(AppButtonModifier())
                 
-                    
                     
             }.onAppear(perform: {
+                self.fireDBHelper.getAllScore()
                 self.checkingUser = false
             })
-                
-                
-                
-            
-            
-            
         }//zstack
         }.navigationViewStyle(StackNavigationViewStyle())//navigationview
-        
-        
-        
     }
-    
     
     func checking() -> Bool{
         if(self.username.isEmpty || self.password.isEmpty){
             //we need to inform the user
             self.error = "Please Enter both name and password"
-            
             return false
         }
         else{
@@ -128,6 +85,22 @@ struct LoginView: View {
             return true
         }
     }//checking func
+    
+    
+    func lookupDataBase () -> Bool{
+        
+//we need to iterate through the list and then it is is matching our record we will return true and navigate
+        for n in self.fireDBHelper.scoreLit {
+            if (n.userName == "Dana" ){
+                print(#function)
+                return true
+            }
+            else{
+                print(n.userName)
+            }
+        }
+        return false
+            }
 }
 
 
