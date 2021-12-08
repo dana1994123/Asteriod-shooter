@@ -48,6 +48,15 @@ struct LoginView: View {
 //                .padding()
 //                .background(Color("yellowCus"))
 //                .cornerRadius(10)
+                
+                HStack{
+                    
+                    Text("Don't have an account? ")
+                    NavigationLink(destination: SignUpView()){
+                        Text("Sign Up")
+                    }
+                    
+                }
                 HStack{
                     
                     Text("\(self.error)").modifier(Error())
@@ -102,8 +111,3 @@ struct LoginView: View {
         return false
             }
 }
-
-
-
-
-
