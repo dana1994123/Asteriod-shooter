@@ -33,6 +33,7 @@
 		37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6432744911100DBB1D5 /* ScoreBoard.swift */; };
 		6A143504275EE29F00C3230D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A143503275EE29F00C3230D /* LoginView.swift */; };
 		6A143506275EE50B00C3230D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A143505275EE50B00C3230D /* User.swift */; };
+		6A14350827618D9C00C3230D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14350727618D9C00C3230D /* MapView.swift */; };
 		6F31A2FC2760226D00A0757D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31A2FB2760226D00A0757D /* SignUpView.swift */; };
 		7170D627275BE14200FF35AF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D626275BE14200FF35AF /* FirebaseFirestoreSwift-Beta */; };
 		7170D629275BE14200FF35AF /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D628275BE14200FF35AF /* FirebaseStorageSwift-Beta */; };
@@ -114,6 +115,7 @@
 		37D8F6432744911100DBB1D5 /* ScoreBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoard.swift; sourceTree = "<group>"; };
 		6A143503275EE29F00C3230D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6A143505275EE50B00C3230D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6A14350727618D9C00C3230D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6F31A2FB2760226D00A0757D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -260,6 +262,7 @@
 				378C34562756A0F500B1C058 /* ScoreUIView.swift */,
 				6A143503275EE29F00C3230D /* LoginView.swift */,
 				37698B14274378F700076781 /* Classes */,
+				6A14350727618D9C00C3230D /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				378CEC08275601E300A5541C /* SwiftUIView.swift in Sources */,
 				37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */,
 				370CFF30273DE4E500DFB1BE /* ContentView.swift in Sources */,
+				6A14350827618D9C00C3230D /* MapView.swift in Sources */,
 				378C34572756A0F500B1C058 /* ScoreUIView.swift in Sources */,
 				6F31A2FC2760226D00A0757D /* SignUpView.swift in Sources */,
 				6A143506275EE50B00C3230D /* User.swift in Sources */,
