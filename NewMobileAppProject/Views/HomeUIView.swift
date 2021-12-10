@@ -34,8 +34,8 @@ struct HomeUIView: View {
                             NavigationLink(destination: ScoreBoard() ){
                                 Text("Start Play").modifier(AppButtonModifier())
                             }
-                            NavigationLink(destination: ScoreBoard() ){
-                                Text("Game Level").modifier(AppButtonModifier())
+                            NavigationLink(destination: MapView() ){
+                                Text("Our Location").modifier(AppButtonModifier())
                             }
                             NavigationLink(destination: ScoreBoard() ){
                                 Text("Score Board").modifier(AppButtonModifier())

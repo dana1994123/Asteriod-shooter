@@ -24,20 +24,17 @@ struct LoginView: View {
     var body: some View {
         NavigationView{
         ZStack {
-//            RadialGradient(gradient: Gradient(colors: [.blue, .gray]), center: .center, startRadius: 100, endRadius: 470)
+
             VStack(spacing: CGFloat(verticalPadding)) {
-                Text("Asteroid Shooter").modifier(Header1())
-//                    .font(.title)
-//                    .foregroundColor(Color.black)
+                Text("LogIn").modifier(Header1()).padding(.top , 60)
+
                 HStack {
                     Image(systemName: "person")
                         .foregroundColor(.secondary)
                     TextField("Enter your name", text: $username)
-//                        .foregroundColor(Color.white)
+
                 }.modifier(TextFieldModifier())
-//                .padding()
-//                .background(Color("yellowCus"))
-//                .cornerRadius(10)
+
                 HStack {
                     Image(systemName: "key")
                         .resizable()
@@ -45,22 +42,18 @@ struct LoginView: View {
                     SecureField("Enter password", text: $password)
 //                        .foregroundColor(Color.white)
                 }.modifier(TextFieldModifier())
-//                .padding()
-//                .background(Color("yellowCus"))
-//                .cornerRadius(10)
-                
-                HStack{
-                    
-                    Text("Don't have an account? ")
-                    NavigationLink(destination: SignUpView()){
-                        Text("Sign Up")
-                    }
-                    
-                }
-                HStack{
+
+                VStack{
                     
                     Text("\(self.error)").modifier(Error())
-                }
+                    HStack{
+                        Text("Don't have an account? ")
+                                           NavigationLink(destination: SignUpView()){
+                                               Text("Sign Up")
+                                           }
+                    }
+                    
+                }.frame(width: 300, height: 5, alignment: .center)
                 NavigationLink(destination: HomeUIView(), isActive: $isShowingHomeView) { EmptyView() }
                 Button(action:{
                     //do the checking and then lookup the firebase and then validate the user then navigate to the HomeUIVIew
@@ -71,7 +64,7 @@ struct LoginView: View {
                     }
                 }){
                     Text("Login")
-                }.modifier(AppButtonModifier())
+                }.modifier(AppButtonModifier()).padding(.bottom , 90)
                 
                     
             }.onAppear(perform: {

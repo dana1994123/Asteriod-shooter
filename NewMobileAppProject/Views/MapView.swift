@@ -49,6 +49,7 @@ struct MapView: View {
                 }
                 .edgesIgnoringSafeArea(.all)
             }
+            .navigationBarHidden(true)
             
         }
         

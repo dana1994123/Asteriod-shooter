@@ -12,8 +12,8 @@ struct ContentView: View {
     @EnvironmentObject var fireDBHelper : FireDBHelper
     var body: some View {
         VStack{
-            //LoginView()
-            MapView()
+            LoginView()
+           
             
             
 //            //all the modifier are under modifier Group
