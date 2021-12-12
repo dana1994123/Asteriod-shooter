@@ -46,10 +46,6 @@ struct ContentView: View {
 //            self.fireDBHelper.getAllScore()
 //        }//hstack
     }
-    private func addScore (){
-        print("adding scores to the firebase")
-        self.fireDBHelper.insertScore(newScore: Score(name: "Dana Aljamal", score: 20))
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
