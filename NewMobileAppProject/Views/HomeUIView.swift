@@ -37,6 +37,9 @@ struct HomeUIView: View {
                             NavigationLink(destination: MapView() ){
                                 Text("Our Location").modifier(AppButtonModifier())
                             }
+                            NavigationLink(destination: PlayInstructions() ){
+                                Text("Game Instructions").modifier(AppButtonModifier())
+                            }
                             NavigationLink(destination: ScoreBoard() ){
                                 Text("Score Board").modifier(AppButtonModifier())
                             }
