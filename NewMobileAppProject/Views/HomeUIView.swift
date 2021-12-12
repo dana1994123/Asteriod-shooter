@@ -31,7 +31,7 @@ struct HomeUIView: View {
                         Image("rock").resizable().frame(width: 90, height: 130)
     
                         HStack{
-                            NavigationLink(destination: ScoreBoard() ){
+                            NavigationLink(destination: GameView() ){
                                 Text("Start Play").modifier(AppButtonModifier())
                             }
                             NavigationLink(destination: MapView() ){
