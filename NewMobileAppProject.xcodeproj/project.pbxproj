@@ -43,6 +43,8 @@
 		71AA1C0D276643D100D1CBC8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C0C276643D100D1CBC8 /* GameView.swift */; };
 		71AA1C0F276643F400D1CBC8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C0E276643F400D1CBC8 /* GameScene.swift */; };
 		71AA1C112766441100D1CBC8 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C102766441100D1CBC8 /* GameOverScene.swift */; };
+		71AD364C2769AEE800C65D9F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 71AD364B2769AEE800C65D9F /* FirebaseAnalytics */; };
+		71AD364E2769AEF500C65D9F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 71AD364D2769AEF500C65D9F /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +136,9 @@
 			files = (
 				7170D627275BE14200FF35AF /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				7170D629275BE14200FF35AF /* FirebaseStorageSwift-Beta in Frameworks */,
+				71AD364C2769AEE800C65D9F /* FirebaseAnalytics in Frameworks */,
 				7170D62B275BE14200FF35AF /* FirebaseFirestore in Frameworks */,
+				71AD364E2769AEF500C65D9F /* FirebaseStorage in Frameworks */,
 				7170D62D275BE14200FF35AF /* FirebaseAuth in Frameworks */,
 				379F050D27633970009D5C5B /* WatchConnectivity.framework in Frameworks */,
 			);
@@ -311,6 +315,8 @@
 				7170D628275BE14200FF35AF /* FirebaseStorageSwift-Beta */,
 				7170D62A275BE14200FF35AF /* FirebaseFirestore */,
 				7170D62C275BE14200FF35AF /* FirebaseAuth */,
+				71AD364B2769AEE800C65D9F /* FirebaseAnalytics */,
+				71AD364D2769AEF500C65D9F /* FirebaseStorage */,
 			);
 			productName = NewMobileAppProject;
 			productReference = 370CFF2A273DE4E500DFB1BE /* NewMobileAppProject.app */;
@@ -802,6 +808,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7170D625275BE14200FF35AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		71AD364B2769AEE800C65D9F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7170D625275BE14200FF35AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		71AD364D2769AEF500C65D9F /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7170D625275BE14200FF35AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
