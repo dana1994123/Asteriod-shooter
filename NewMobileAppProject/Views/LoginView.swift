@@ -32,6 +32,8 @@ struct LoginView: View {
                     Image(systemName: "person")
                         .foregroundColor(.secondary)
                     TextField("Enter your name", text: $username)
+                        .autocapitalization(.none)
+
 
                 }.modifier(TextFieldModifier())
 
@@ -40,6 +42,8 @@ struct LoginView: View {
                         .resizable()
                         .frame(width: 16.0, height: 20.0) .foregroundColor(.secondary)
                     SecureField("Enter password", text: $password)
+                        .autocapitalization(.none)
+
 //                        .foregroundColor(Color.white)
                 }.modifier(TextFieldModifier())
 

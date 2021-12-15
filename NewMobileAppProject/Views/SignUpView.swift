@@ -15,6 +15,7 @@ struct SignUpView: View {
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
     @State private var error : String = ""
+    @State private var score : String = "0"
     @State private var checkingUser = false
     @State private var isShowingHomeView = false
 
@@ -71,7 +72,7 @@ struct SignUpView: View {
                    Button(action:{
                        if(self.checking()){
                       // AddInfo(UserName: username, Email: email, Password: password, ConfirmPassword: confirmPassword)
-                    self.isShowingHomeView = self.AddInfo(UserName: username, Email: email, Password: password, ConfirmPassword: confirmPassword)
+                    self.isShowingHomeView = self.AddInfo(UserName: username, Email: email, Password: password, ConfirmPassword: confirmPassword,Score: score)
 
                        }
                    })
@@ -89,9 +90,9 @@ struct SignUpView: View {
         
     }
     
-    func AddInfo(UserName: String, Email: String, Password: String, ConfirmPassword: String) -> Bool{
+    func AddInfo(UserName: String, Email: String, Password: String, ConfirmPassword: String, Score: String) -> Bool{
         let db = Firestore.firestore()
-        db.collection("Users").document().setData(["UserName": UserName, "Email": Email, "Password": Password, "ConfirmPassword": ConfirmPassword])
+        db.collection("Scores").document().setData(["userName": UserName, "email": Email, "password": Password, "confirmPassword": ConfirmPassword, "score" : Score])
         return true
     }
     
