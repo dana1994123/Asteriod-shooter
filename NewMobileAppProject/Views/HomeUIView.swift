@@ -43,6 +43,9 @@ struct HomeUIView: View {
                             NavigationLink(destination: ScoreBoard() ){
                                 Text("Score Board").modifier(AppButtonModifier())
                             }
+                            NavigationLink(destination: ListView() ){
+                                Text("About Us").modifier(AppButtonModifier())
+                            }
                         
                         }.frame(width: 700, height: 200, alignment: .bottom).padding(.bottom , 10)
                 }//Vstack
