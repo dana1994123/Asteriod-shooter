@@ -17,10 +17,11 @@ struct ScoreUIView: View {
         Text("Scores").font(.title)
 
             List(viewModel.scores){ user in
-                HStack{
+                
                     VStack(){
+                        HStack{
                     Text(user.name).font(.title)
-                    Text(user.score).font(.subheadline)
+                    Text(String(user.score)).font(.subheadline)
                     }
 
                 }

@@ -13,7 +13,7 @@ class userViewModel: ObservableObject{
     private var db = Firestore.firestore()
     
     func fetchData(){
-        db.collection("Topscores").addSnapshotListener{ (querySnapshot, error) in
+        db.collection("Scores").addSnapshotListener{ (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else{
                 print("No Data")
                 return
@@ -22,8 +22,8 @@ class userViewModel: ObservableObject{
             self.scores = documents.map{(queryDocumentSnapshot ) -> User in
                 
                 let data = queryDocumentSnapshot.data()
-                let name = data["Name"] as? String ?? ""
-                let score = data["Score"] as? String ?? ""
+                let name = data["userName"] as? String ?? ""
+                let score = data["score"] as? Int ?? 100
                 return User (name: name, score: score)
             }
         }
