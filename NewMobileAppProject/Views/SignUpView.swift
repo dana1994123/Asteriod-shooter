@@ -15,7 +15,7 @@ struct SignUpView: View {
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
     @State private var error : String = ""
-    @State private var score : String = "0"
+    @State private var score : Int =  0
     @State private var checkingUser = false
     @State private var isShowingHomeView = false
 
@@ -90,7 +90,7 @@ struct SignUpView: View {
         
     }
     
-    func AddInfo(UserName: String, Email: String, Password: String, ConfirmPassword: String, Score: String) -> Bool{
+    func AddInfo(UserName: String, Email: String, Password: String, ConfirmPassword: String, Score: Int) -> Bool{
         let db = Firestore.firestore()
         db.collection("Scores").document().setData(["userName": UserName, "email": Email, "password": Password, "confirmPassword": ConfirmPassword, "score" : Score])
         return true
