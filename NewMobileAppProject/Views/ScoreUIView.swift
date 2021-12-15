@@ -2,14 +2,38 @@
 //  ScoreUIView.swift
 //  NewMobileAppProject
 //
-//  Created by dana on 2021-11-30.
+//  Created by Roop on 2021-12-14.
 //
 
 import SwiftUI
 
 struct ScoreUIView: View {
+    
+    @ObservedObject private var viewModel = userViewModel()
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Text("Scores").font(.title)
+
+            List(viewModel.scores){ user in
+                HStack{
+                    VStack(){
+                    Text(user.name).font(.title)
+                    Text(user.score).font(.subheadline)
+                    }
+
+                }
+                .foregroundColor(.white)
+                .padding()
+                .background(Color.blue)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+            }
+            .listStyle(SidebarListStyle())
+                .onAppear(){
+                    self.viewModel.fetchData()
+                }
+            
     }
 }
 

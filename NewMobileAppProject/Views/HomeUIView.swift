@@ -40,7 +40,7 @@ struct HomeUIView: View {
                             NavigationLink(destination: PlayInstructions() ){
                                 Text("Game Instructions").modifier(AppButtonModifier())
                             }
-                            NavigationLink(destination: ScoreBoard() ){
+                            NavigationLink(destination: ScoreUIView() ){
                                 Text("Score Board").modifier(AppButtonModifier())
                             }
                             NavigationLink(destination: ListView() ){

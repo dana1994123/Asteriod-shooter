@@ -47,6 +47,8 @@
 		71AD364E2769AEF500C65D9F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 71AD364D2769AEF500C65D9F /* FirebaseStorage */; };
 		71AD36502769B1A500C65D9F /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD364F2769B1A500C65D9F /* GetData.swift */; };
 		71AD36522769B1F100C65D9F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD36512769B1F100C65D9F /* AboutView.swift */; };
+		71AD36542769B3AC00C65D9F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD36532769B3AC00C65D9F /* User.swift */; };
+		71AD36592769B3F100C65D9F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD36582769B3F100C65D9F /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		71AA1C102766441100D1CBC8 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		71AD364F2769B1A500C65D9F /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		71AD36512769B1F100C65D9F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		71AD36532769B3AC00C65D9F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		71AD36582769B3F100C65D9F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,8 @@
 				37698B152743790700076781 /* Colors.swift */,
 				378C34522756997E00B1C058 /* Score.swift */,
 				71AD364F2769B1A500C65D9F /* GetData.swift */,
+				71AD36532769B3AC00C65D9F /* User.swift */,
+				71AD36582769B3F100C65D9F /* UserViewModel.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -288,9 +294,9 @@
 				71AA1C0E276643F400D1CBC8 /* GameScene.swift */,
 				6A14350727618D9C00C3230D /* MapView.swift */,
 				37D8F6432744911100DBB1D5 /* ScoreBoard.swift */,
+				71AD36512769B1F100C65D9F /* AboutView.swift */,
 				378C34562756A0F500B1C058 /* ScoreUIView.swift */,
 				71AA1C0A2765E08800D1CBC8 /* PlayInstructions.swift */,
-				71AD36512769B1F100C65D9F /* AboutView.swift */,
 				71AA1C102766441100D1CBC8 /* GameOverScene.swift */,
 				71AA1C0C276643D100D1CBC8 /* GameView.swift */,
 				37698B14274378F700076781 /* Classes */,
@@ -450,6 +456,7 @@
 				71AA1C112766441100D1CBC8 /* GameOverScene.swift in Sources */,
 				71AA1C0D276643D100D1CBC8 /* GameView.swift in Sources */,
 				378CEC08275601E300A5541C /* SwiftUIView.swift in Sources */,
+				71AD36542769B3AC00C65D9F /* User.swift in Sources */,
 				71AD36502769B1A500C65D9F /* GetData.swift in Sources */,
 				37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */,
 				370CFF30273DE4E500DFB1BE /* ContentView.swift in Sources */,
@@ -460,6 +467,7 @@
 				378C345527569A0200B1C058 /* File.swift in Sources */,
 				71AD36522769B1F100C65D9F /* AboutView.swift in Sources */,
 				71AA1C0B2765E08800D1CBC8 /* PlayInstructions.swift in Sources */,
+				71AD36592769B3F100C65D9F /* UserViewModel.swift in Sources */,
 				370CFF2E273DE4E500DFB1BE /* NewMobileAppProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
