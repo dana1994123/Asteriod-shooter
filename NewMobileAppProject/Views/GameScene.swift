@@ -7,6 +7,7 @@
 
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 // Adding Physics struct
 struct PhysicsCategory{
@@ -44,6 +45,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     func initLabels() //function for labels
     {
+        //Customizing lable sore
         lblScore.name = "lblScore"
         lblScore.text = "Score: "
         lblScore.fontSize = 20
@@ -52,6 +54,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         lblScore.zPosition = 11
         self.addChild(lblScore)
         
+        //Customizing lable title
         lblTitle.name = "lblTitle"
         lblTitle.text = "Kill the Alien"
         lblTitle.fontSize = 40
@@ -60,6 +63,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         lblTitle.zPosition = 11
         self.addChild(lblTitle)
         
+        // Customizing lable Time
         lblTime.name = "lblTime"
         lblTime.text = ""
         lblTime.fontSize = 20
@@ -75,7 +79,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     override func didMove(to view: SKView) {
         
-        initLabels() // Calling Labels when the screen is loaded
+        //Background Music added
+        let backgroundMusic = SKAudioNode(fileNamed: "song1")
+        backgroundMusic.autoplayLooped = true
+        addChild(backgroundMusic)
+
+
+        
+        // Calling Labels when the screen is loaded
+        initLabels()
         
         //adding background and fading it
         background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
@@ -162,16 +174,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-//    func heroDidCollideWithBaddy(monster: SKSpriteNode, baddy: SKSpriteNode){
-//        print("hit")
-//        score = score! + scoreIncrement
-//        self.lblScore.text = "Score: \(score!)"
-//        
-//        lblScore.alpha = 0.0
-//        lblScore.run(SKAction.fadeIn(withDuration: 2.0))
-//    }
-    
-    
+    //When fire hits tht alien
     func projectileDidCollideWithMonster(projectile: SKSpriteNode, baddy: SKSpriteNode) {
       print("Hit")
         score = score! + scoreIncrement
@@ -180,10 +183,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         lblScore.alpha = 0.0
         lblScore.run(SKAction.fadeIn(withDuration: 2.0))
        
-//        monster.run (SKAction.rotate(byAngle: CGFloat(360.0), duration: TimeInterval(1.0)))
-//        monster.run(SKAction.removeFromParent())
+
         projectile.removeFromParent()
-//        let monsposition  = monster.position
         
         let explode = SKSpriteNode(imageNamed: "explosion")
         explode.position = baddy.position
@@ -194,7 +195,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-    
+    //when the game begins
     func didBegin(_ contact: SKPhysicsContact) {
         var firstBody : SKPhysicsBody
         var secondBody : SKPhysicsBody
@@ -211,15 +212,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             (secondBody.categoryBitMask & PhysicsCategory.Projectile != 0)){
             projectileDidCollideWithMonster(projectile: firstBody.node as! SKSpriteNode, baddy: secondBody.node as! SKSpriteNode)
         }
-//        if((firstBody.categoryBitMask & PhysicsCategory.Baddy != 0) &&
-//            (secondBody.categoryBitMask & PhysicsCategory.Hero != 0)){
-//            projectileDidCollideWithMonster(monster: firstBody.node as! SKSpriteNode, baddy: secondBody.node as! SKSpriteNode)
-//        }
+
     }
     
    
     
-    // Moving our hero
+    // Moving our hero // hero will move along the x axis
     func moveGoodGuy(toPoint pos : CGPoint){
         let actionMove = SKAction.move(to: pos, duration: TimeInterval(2.0))
         let actionMoveDone = SKAction.fadeIn(withDuration: 2)
@@ -227,7 +225,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
- 
+ //action when our mouse touches the screen
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
        
         let pos : CGPoint = CGPoint(x:(touches.first?.location(in: self).x)!,y:200)
@@ -237,7 +235,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-    
+    //action when our mouse done the touch //it is throwing projectiles
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         // 1 - Choose one of the touches to work with
         guard let touch = touches.first else{
@@ -280,6 +278,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         projectile.physicsBody?.usesPreciseCollisionDetection = true
     }
     
+    //keep the data of time
     override func update(_ currentTime: TimeInterval) {
             // Called before each frame is rendered
             enumerateChildNodes(withName: "baddy") { node, stop in
@@ -343,3 +342,4 @@ extension CGPoint {
     return self / length()
   }
 }
+

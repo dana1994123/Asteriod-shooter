@@ -39,6 +39,12 @@
 		7170D629275BE14200FF35AF /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D628275BE14200FF35AF /* FirebaseStorageSwift-Beta */; };
 		7170D62B275BE14200FF35AF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D62A275BE14200FF35AF /* FirebaseFirestore */; };
 		7170D62D275BE14200FF35AF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D62C275BE14200FF35AF /* FirebaseAuth */; };
+		7194B78E276C0F0E0070E734 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD364F2769B1A500C65D9F /* GetData.swift */; };
+		7194B790276C0F2A0070E734 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7194B78F276C0F2A0070E734 /* WatchConnectivity.framework */; };
+		7194B792276C0F320070E734 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7194B791276C0F320070E734 /* WatchKit.framework */; };
+		7194B797276C3EC20070E734 /* gamemusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7194B796276C3EC20070E734 /* gamemusic.mp3 */; };
+		7194B799276C44600070E734 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7194B798276C44600070E734 /* song3.mp3 */; };
+		7194B79B276C463F0070E734 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7194B79A276C463F0070E734 /* song1.mp3 */; };
 		71AA1C0B2765E08800D1CBC8 /* PlayInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C0A2765E08800D1CBC8 /* PlayInstructions.swift */; };
 		71AA1C0D276643D100D1CBC8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C0C276643D100D1CBC8 /* GameView.swift */; };
 		71AA1C0F276643F400D1CBC8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C0E276643F400D1CBC8 /* GameScene.swift */; };
@@ -127,6 +133,11 @@
 		6A143503275EE29F00C3230D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6A14350727618D9C00C3230D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		6F31A2FB2760226D00A0757D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		7194B78F276C0F2A0070E734 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		7194B791276C0F320070E734 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.0.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		7194B796276C3EC20070E734 /* gamemusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gamemusic.mp3; sourceTree = "<group>"; };
+		7194B798276C44600070E734 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
+		7194B79A276C463F0070E734 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 		71AA1C0A2765E08800D1CBC8 /* PlayInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayInstructions.swift; sourceTree = "<group>"; };
 		71AA1C0C276643D100D1CBC8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		71AA1C0E276643F400D1CBC8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -156,6 +167,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7194B790276C0F2A0070E734 /* WatchConnectivity.framework in Frameworks */,
+				7194B792276C0F320070E734 /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +207,7 @@
 		370CFF2C273DE4E500DFB1BE /* NewMobileAppProject */ = {
 			isa = PBXGroup;
 			children = (
+				7194B793276C3E6B0070E734 /* music */,
 				378C344D275693CC00B1C058 /* GoogleService-Info.plist */,
 				378C344F2756951F00B1C058 /* Helper  */,
 				378CEC06275601D500A5541C /* New Group */,
@@ -279,6 +293,8 @@
 		379F050B2763396F009D5C5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7194B791276C0F320070E734 /* WatchKit.framework */,
+				7194B78F276C0F2A0070E734 /* WatchConnectivity.framework */,
 				379F050C27633970009D5C5B /* WatchConnectivity.framework */,
 			);
 			name = Frameworks;
@@ -287,6 +303,9 @@
 		37D8F6402744906F00DBB1D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7194B796276C3EC20070E734 /* gamemusic.mp3 */,
+				7194B79A276C463F0070E734 /* song1.mp3 */,
+				7194B798276C44600070E734 /* song3.mp3 */,
 				6A143503275EE29F00C3230D /* LoginView.swift */,
 				6F31A2FB2760226D00A0757D /* SignUpView.swift */,
 				370CFF2F273DE4E500DFB1BE /* ContentView.swift */,
@@ -302,6 +321,13 @@
 				37698B14274378F700076781 /* Classes */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7194B793276C3E6B0070E734 /* music */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,6 +443,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7194B79B276C463F0070E734 /* song1.mp3 in Resources */,
+				7194B797276C3EC20070E734 /* gamemusic.mp3 in Resources */,
+				7194B799276C44600070E734 /* song3.mp3 in Resources */,
 				370CFF35273DE4E600DFB1BE /* Preview Assets.xcassets in Resources */,
 				370CFF32273DE4E600DFB1BE /* Assets.xcassets in Resources */,
 				37AD3160275F127700BD3DFF /* Home.gif in Resources */,
@@ -478,6 +507,7 @@
 			files = (
 				370CFF4F273DE4E700DFB1BE /* NotificationController.swift in Sources */,
 				370CFF4D273DE4E700DFB1BE /* ContentView.swift in Sources */,
+				7194B78E276C0F0E0070E734 /* GetData.swift in Sources */,
 				370CFF53273DE4E700DFB1BE /* ComplicationController.swift in Sources */,
 				370CFF4B273DE4E700DFB1BE /* NewMobileAppProjectApp.swift in Sources */,
 				370CFF51273DE4E700DFB1BE /* NotificationView.swift in Sources */,

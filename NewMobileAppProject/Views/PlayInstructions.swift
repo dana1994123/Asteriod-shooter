@@ -12,6 +12,7 @@ struct Instruction : Hashable{
     var inst = ""
 }
 
+//Struct declaration
 struct PlayInstructions: View{
     private let images = [Instruction(
                             title: "How to Win?",inst: "Try to shoot as many Aliens\n  as you can.\n Score more than 500 to win:)"),
@@ -19,6 +20,7 @@ struct PlayInstructions: View{
                           Instruction(title: "Points",inst: "Gain 10 points if you kill Alien,\n Don't worry if You miss wont lose anything")]
     var body: some View{
         ZStack{
+            //adding background image and fading it 
             Image("bgGame").resizable().opacity(0.30).frame(width: 1000, height: 410, alignment: .center)
             VStack{
                 TabView{
@@ -46,6 +48,8 @@ struct PlayInstructions_Previews : PreviewProvider{
     }
 }
 
+
+//Customizing it to give better view
 struct CustomInstruction : View{
     var item : Instruction
     var body: some View{
