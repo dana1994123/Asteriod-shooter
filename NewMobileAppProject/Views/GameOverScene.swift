@@ -8,7 +8,7 @@
 import SpriteKit
 
 class GameOverScene : SKScene{
-    
+    //scene to be shown when the user lost or win 
     init(size: CGSize, won:Bool) {
         super.init(size: size)
         

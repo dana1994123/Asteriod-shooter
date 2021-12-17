@@ -9,8 +9,10 @@ import Foundation
 import FirebaseFirestore
 
 class FireDBHelper: ObservableObject{
+    //a sharable list contains instance os score
     @Published var scoreLit = [Score]()
     private let store : Firestore
+    // a collection name in the firestore
     private let COLLLECTION_NAME : String = "Scores"
     private static var shared : FireDBHelper?
     static func getInstance() -> FireDBHelper{
@@ -25,6 +27,7 @@ class FireDBHelper: ObservableObject{
         self.store = database
         
     }
+    //add new score to the firebase when we sign up
     func insertScore(newScore : Score){
         do{
             try self.store.collection(COLLLECTION_NAME).addDocument(from:newScore)
@@ -36,6 +39,7 @@ class FireDBHelper: ObservableObject{
         
         
     }
+    //get all the scores that has been saved in the collection to check if we have the user or not
     func getAllScore(){
         self.store.collection(COLLLECTION_NAME).addSnapshotListener({(querySnapshot , error) in
             guard let snapshot = querySnapshot else{
@@ -64,12 +68,6 @@ class FireDBHelper: ObservableObject{
             }
             
         })
-        
-    }
-    func updateScore(){
-        
-    }
-    func deleteScore(){
         
     }
 }

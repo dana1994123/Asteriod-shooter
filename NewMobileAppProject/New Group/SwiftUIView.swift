@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+//modifier structs that contains a custom style for almost all the components for our app that can be user across the app
 struct Header1: ViewModifier {
     let colors = Colors()
     func body(content : Content) ->some View{

@@ -12,6 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var fireDBHelper : FireDBHelper
     var body: some View {
         VStack{
+            //the first page that will run 
             LoginView()
            
             

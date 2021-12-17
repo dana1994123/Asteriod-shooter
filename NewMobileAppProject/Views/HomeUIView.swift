@@ -9,6 +9,7 @@ import SwiftUI
 
 var images : [UIImage]! = [UIImage(named: "gameText")!, UIImage(named: "spaceAround")!]
 struct picanimation: UIViewRepresentable {
+    //animated two picture to create dynamic look to the game
     let animatedImage = UIImage.animatedImage(with: images, duration: 3)
     func makeUIView(context: Self.Context) -> UIView {
         let someView = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
@@ -21,16 +22,20 @@ struct picanimation: UIViewRepresentable {
     }
 }
 struct HomeUIView: View {
+    //instance of the colors class that has some added custom color to the resources
     let colors = Colors()
     var body: some View {
         NavigationView{
             ZStack{
+                //added background
                 Image("bg2").resizable().frame(width: 980, height: 460, alignment: .center)
+                //call the animated images struc in the zscore
                 picanimation()
                     VStack{
                         Image("rock").resizable().frame(width: 90, height: 130)
     
                         HStack{
+                            //added 5 navigation to different views in the app
                             NavigationLink(destination: GameView() ){
                                 Text("Start Play").modifier(AppButtonModifier())
                             }

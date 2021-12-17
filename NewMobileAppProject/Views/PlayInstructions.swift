@@ -11,6 +11,7 @@ struct Instruction : Hashable{
     var title = ""
     var inst = ""
 }
+//a class that has an observable property to be used across the Iphone & watch app 
 class ImagesInstruction : ObservableObject{
     @Published var images = [Instruction(
         title: "How to Win?",inst: "Try to shoot as many Aliens\n  as you can.\n Score more than 500 to win:)"),

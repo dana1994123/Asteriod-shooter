@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    //a list of the data from the php
     @ObservedObject var about =  GetData()
     @State var showSheet = false
+    //contains the instruction information
     @EnvironmentObject var images : ImagesInstruction
     @State var bio = ""
     var body: some View {

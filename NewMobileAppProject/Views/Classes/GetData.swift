@@ -14,7 +14,7 @@ public struct People: Codable, Hashable{
     public func hash(into hasher: inout Hasher) {
         hasher.combine(Name)
     }
-    
+    //encode the data for the watch connectivity
     public func encode(with coder : NSCoder){
         coder.encode(self.Name, forKey: "name")
         coder.encode (self.Bio , forKey : "bio")

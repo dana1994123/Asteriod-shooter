@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct NewMobileAppProjectApp: App {
+    //add environment variable to be modify across the app 
     var images = ImagesInstruction()
     @SceneBuilder var body: some Scene {
         WindowGroup {

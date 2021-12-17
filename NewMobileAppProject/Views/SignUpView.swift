@@ -60,6 +60,7 @@ struct SignUpView: View {
                        Image(systemName: "key")
                            .resizable()
                            .frame(width: 16.0, height: 20.0) .foregroundColor(.secondary)
+                       //add a secure text feild suitable for the password
                        SecureField("Confirm password", text: $confirmPassword)
                            .autocapitalization(.none)
                    }.modifier(TextFieldModifier())

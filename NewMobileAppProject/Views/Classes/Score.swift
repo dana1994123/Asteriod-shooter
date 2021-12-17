@@ -9,6 +9,7 @@ import Foundation
 import FirebaseFirestoreSwift
 
 struct Score : Hashable , Codable{
+    //obj to save in the firestore as a dictionary
     @DocumentID  var id : String? = UUID().uuidString
     var userName : String = ""
     var password : String  = ""
@@ -21,6 +22,7 @@ struct Score : Hashable , Codable{
         
     }
     init(userName : String , score : Int, password : String, confirmPassword: String , email : String ){
+        //inilize the object data 
         self.userName = userName
         self.score = score
         self.password = password

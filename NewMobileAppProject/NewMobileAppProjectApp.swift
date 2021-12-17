@@ -11,6 +11,7 @@ import FirebaseFirestore
 
 @main
 struct NewMobileAppProjectApp: App {
+    //add environment variables to be modify across the app 
     let colors = Colors()
     let fireDBHelper : FireDBHelper
     var images = ImagesInstruction()

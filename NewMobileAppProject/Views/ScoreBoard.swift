@@ -13,6 +13,7 @@ struct ScoreBoard: View {
         VStack{
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         }.onAppear(){
+            //whenever the vstack is loaded we call the function to get all scores from our firestore
             self.fireDbHelper.getAllScore()
         }
         

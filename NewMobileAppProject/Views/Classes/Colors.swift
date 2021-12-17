@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 class Colors: ObservableObject {
+    //a class that have a custom color resources 
     @Published var yellowCus = Color("yellowCus")
     @Published var redCus = Color("red")
     @Published var DarkBlueCus = Color("DarkBlueCus")

@@ -11,6 +11,7 @@ import SpriteKit
 struct GameView: View{
     
     var scene : SKScene{
+        //specify the scene property 
         let scene = GameScene()
         scene.size = CGSize(width: 1000, height:750)
         scene.scaleMode = .aspectFill
@@ -20,6 +21,7 @@ struct GameView: View{
     
     
     var body: some View{
+        //added the game spirit kit with a custom dimension
         SpriteView(scene: scene)
             .frame(width: 1000, height: 750)
             .ignoresSafeArea()
