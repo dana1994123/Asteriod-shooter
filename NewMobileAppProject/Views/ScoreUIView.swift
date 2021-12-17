@@ -19,28 +19,29 @@ struct ScoreUIView: View {
         /* Searchs in the "Scores" collection on cloud firestore and fetches the scores of the users who
          have an account*/
         
-        Text("Scores").font(.title)
-
+        Text("Scores").font(.title).modifier(Header1())
         /* Fetched info will be displayed in a list format */
             List(viewModel.scores){ user in
-                
+            
+
                     VStack(){
                         HStack{
                     Text(user.name).font(.title)
-                    Text(String(user.score)).font(.subheadline)
+                    Text(String(user.score)).font(.title2)
+                        }.frame(width:640)
                     }
-
-                }
                 .foregroundColor(.white)
                 .padding()
-                .background(Color.blue)
+                .background(Color.orange)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
+            
             }
             .listStyle(SidebarListStyle())
                 .onAppear(){
                     // call the fetchData method of the USerViewModel
                     self.viewModel.fetchData()
                 }
+            
             
     }
 }
