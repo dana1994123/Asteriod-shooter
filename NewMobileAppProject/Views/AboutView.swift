@@ -18,14 +18,14 @@ struct AboutView: View {
                         .font(.headline)
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
-                        .frame(width: 300, height: 25, alignment: .center)
+                        .frame(width: 300, height: 10, alignment: .center)
                     Text("Bio: \(person.Bio)")
                         .font(.subheadline)
                         .foregroundColor(.yellow)
-                     .frame(width: 300, height: 25, alignment: .center)
+                     .frame(width: 300, height: 30, alignment: .center)
                     }
                     
-                }.frame(width: 300, height: 50, alignment: .center)//hstack
+                }.frame(width: 300, height: 40, alignment: .center)//hstack
     }
 }
 

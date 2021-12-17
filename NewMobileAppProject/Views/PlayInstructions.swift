@@ -13,15 +13,11 @@ struct Instruction : Hashable{
 }
 class ImagesInstruction : ObservableObject{
     @Published var images = [Instruction(
-
-//Struct declaration
-struct PlayInstructions: View{
-    private let images = [Instruction(
-                            title: "How to Win?",inst: "Try to shoot as many Aliens\n  as you can.\n Score more than 500 to win:)"),
-                          Instruction(title: "Be Careful!", inst: "There is a Time limit \n If you score less than 500 Aliens\n  in  30 seconds You will Lose:("),
-                          Instruction(title: "Points",inst: "Gain 10 points if you kill Alien,\n Don't worry if You miss wont lose anything")]
+        title: "How to Win?",inst: "Try to shoot as many Aliens\n  as you can.\n Score more than 500 to win:)"),
+      Instruction(title: "Be Careful!", inst: "There is a Time limit \n If you score less than 500 Aliens\n  in  30 seconds You will Lose:("),
+      Instruction(title: "Points",inst: "Gain 10 points if you kill Alien,\n Don't worry if You miss wont lose anything")]
 }
-
+//Struct declaration
 struct PlayInstructions: View{
     @EnvironmentObject var images : ImagesInstruction
 //    private let images = [Instruction(

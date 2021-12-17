@@ -22,30 +22,24 @@
 		370CFF53273DE4E700DFB1BE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370CFF52273DE4E700DFB1BE /* ComplicationController.swift */; };
 		370CFF55273DE4E700DFB1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370CFF54273DE4E700DFB1BE /* Assets.xcassets */; };
 		370CFF58273DE4E700DFB1BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 370CFF57273DE4E700DFB1BE /* Preview Assets.xcassets */; };
-		375753C4276C13770000525A /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD364F2769B1A500C65D9F /* GetData.swift */; };
 		375753CA276C41090000525A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375753C9276C41090000525A /* CoreLocation.framework */; };
 		375753CC276C41140000525A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375753CB276C41140000525A /* LocalAuthentication.framework */; };
 		37698B162743790700076781 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698B152743790700076781 /* Colors.swift */; };
 		378C344E275693CC00B1C058 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 378C344D275693CC00B1C058 /* GoogleService-Info.plist */; };
 		378C34512756953800B1C058 /* ScoreDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C34502756953800B1C058 /* ScoreDBHelper.swift */; };
 		378C34532756997E00B1C058 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C34522756997E00B1C058 /* Score.swift */; };
-		378C345527569A0200B1C058 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C345427569A0200B1C058 /* File.swift */; };
 		378C34572756A0F500B1C058 /* ScoreUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C34562756A0F500B1C058 /* ScoreUIView.swift */; };
 		378CEC08275601E300A5541C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378CEC07275601E300A5541C /* SwiftUIView.swift */; };
 		37AD3160275F127700BD3DFF /* Home.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37AD315F275F127700BD3DFF /* Home.gif */; };
 		37C9834B276C5B8300BD07B4 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378CEC07275601E300A5541C /* SwiftUIView.swift */; };
 		37C9834C276C5BAB00BD07B4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37698B152743790700076781 /* Colors.swift */; };
-		37C9834D276C5D3800BD07B4 /* PlayInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C0A2765E08800D1CBC8 /* PlayInstructions.swift */; };
+		37C98350276C6E2900BD07B4 /* PlayInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1C0A2765E08800D1CBC8 /* PlayInstructions.swift */; };
 		37D8F6422744908C00DBB1D5 /* HomeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6412744908B00DBB1D5 /* HomeUIView.swift */; };
 		37D8F6442744911100DBB1D5 /* ScoreBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D8F6432744911100DBB1D5 /* ScoreBoard.swift */; };
 		64B2F7F83B418986CFA5E3F7 /* Pods_NewMobileAppProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F92D985691B69C49BB2E65A0 /* Pods_NewMobileAppProject.framework */; };
 		6A143504275EE29F00C3230D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A143503275EE29F00C3230D /* LoginView.swift */; };
 		6A14350827618D9C00C3230D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A14350727618D9C00C3230D /* MapView.swift */; };
 		6F31A2FC2760226D00A0757D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F31A2FB2760226D00A0757D /* SignUpView.swift */; };
-		7170D627275BE14200FF35AF /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D626275BE14200FF35AF /* FirebaseFirestoreSwift-Beta */; };
-		7170D629275BE14200FF35AF /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D628275BE14200FF35AF /* FirebaseStorageSwift-Beta */; };
-		7170D62B275BE14200FF35AF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D62A275BE14200FF35AF /* FirebaseFirestore */; };
-		7170D62D275BE14200FF35AF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7170D62C275BE14200FF35AF /* FirebaseAuth */; };
 		7194B78E276C0F0E0070E734 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD364F2769B1A500C65D9F /* GetData.swift */; };
 		7194B790276C0F2A0070E734 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7194B78F276C0F2A0070E734 /* WatchConnectivity.framework */; };
 		7194B792276C0F320070E734 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7194B791276C0F320070E734 /* WatchKit.framework */; };
@@ -60,7 +54,6 @@
 		71AD36522769B1F100C65D9F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD36512769B1F100C65D9F /* AboutView.swift */; };
 		71AD36542769B3AC00C65D9F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD36532769B3AC00C65D9F /* User.swift */; };
 		71AD36592769B3F100C65D9F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AD36582769B3F100C65D9F /* UserViewModel.swift */; };
-		CC1ABE88FFC597892E0EFEDC /* Pods_NewMobileAppProject_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AC9937A7407E7200BB5129 /* Pods_NewMobileAppProject_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,14 +119,12 @@
 		370CFF57273DE4E700DFB1BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		370CFF59273DE4E700DFB1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		370CFF5A273DE4E700DFB1BE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		375753C0276C104A0000525A /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		375753C9276C41090000525A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
 		375753CB276C41140000525A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
 		37698B152743790700076781 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		378C344D275693CC00B1C058 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		378C34502756953800B1C058 /* ScoreDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDBHelper.swift; sourceTree = "<group>"; };
 		378C34522756997E00B1C058 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
-		378C345427569A0200B1C058 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		378C34562756A0F500B1C058 /* ScoreUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreUIView.swift; sourceTree = "<group>"; };
 		378CEC07275601E300A5541C /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		379F050C27633970009D5C5B /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
@@ -220,6 +211,7 @@
 				370CFF2B273DE4E500DFB1BE /* Products */,
 				379F050B2763396F009D5C5B /* Frameworks */,
 				314C103B7DDF034B40BCF0A5 /* Pods */,
+				37C9834F276C6D9200BD07B4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,7 +228,6 @@
 		370CFF2C273DE4E500DFB1BE /* NewMobileAppProject */ = {
 			isa = PBXGroup;
 			children = (
-				7194B793276C3E6B0070E734 /* music */,
 				378C344D275693CC00B1C058 /* GoogleService-Info.plist */,
 				378C344F2756951F00B1C058 /* Helper  */,
 				378CEC06275601D500A5541C /* New Group */,
@@ -306,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				378C34502756953800B1C058 /* ScoreDBHelper.swift */,
-				378C345427569A0200B1C058 /* File.swift */,
 			);
 			path = "Helper ";
 			sourceTree = "<group>";
@@ -332,6 +322,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		37C9834F276C6D9200BD07B4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				375753C9276C41090000525A /* CoreLocation.framework */,
+				375753CB276C41140000525A /* LocalAuthentication.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		37D8F6402744906F00DBB1D5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,13 +352,6 @@
 				37698B14274378F700076781 /* Classes */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		7194B793276C3E6B0070E734 /* music */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -609,7 +601,6 @@
 				378C34572756A0F500B1C058 /* ScoreUIView.swift in Sources */,
 				6F31A2FC2760226D00A0757D /* SignUpView.swift in Sources */,
 				6A143504275EE29F00C3230D /* LoginView.swift in Sources */,
-				378C345527569A0200B1C058 /* File.swift in Sources */,
 				71AD36522769B1F100C65D9F /* AboutView.swift in Sources */,
 				71AA1C0B2765E08800D1CBC8 /* PlayInstructions.swift in Sources */,
 				71AD36592769B3F100C65D9F /* UserViewModel.swift in Sources */,
@@ -626,6 +617,7 @@
 				37C9834B276C5B8300BD07B4 /* SwiftUIView.swift in Sources */,
 				370CFF4D273DE4E700DFB1BE /* ContentView.swift in Sources */,
 				7194B78E276C0F0E0070E734 /* GetData.swift in Sources */,
+				37C98350276C6E2900BD07B4 /* PlayInstructions.swift in Sources */,
 				370CFF53273DE4E700DFB1BE /* ComplicationController.swift in Sources */,
 				370CFF4B273DE4E700DFB1BE /* NewMobileAppProjectApp.swift in Sources */,
 				370CFF51273DE4E700DFB1BE /* NotificationView.swift in Sources */,
