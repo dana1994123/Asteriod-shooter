@@ -8,26 +8,32 @@
 import SwiftUI
 
 struct LoginView: View {
+    // these are the state variables used by the form
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var error : String = ""
     @State private var checkingUser = false
     @State private var input = false
     
+    // check if showing homeview
     @State private var isShowingHomeView = false
     
-    
+    // firebase helper variable
     @EnvironmentObject var fireDBHelper : FireDBHelper
     
+    // vertical padding of the form
     let verticalPadding = 40.0
     
     var body: some View {
         NavigationView{
         ZStack {
-
+            
+            // form
             VStack(spacing: CGFloat(verticalPadding)) {
+                // login title with a custom text modifier
                 Text("LogIn").modifier(Header1()).padding(.top , 60)
 
+                // first text field for name
                 HStack {
                     Image(systemName: "person")
                         .foregroundColor(.secondary)
@@ -36,7 +42,8 @@ struct LoginView: View {
 
 
                 }.modifier(TextFieldModifier())
-
+                
+                // second text field for password
                 HStack {
                     Image(systemName: "key")
                         .resizable()
@@ -46,7 +53,8 @@ struct LoginView: View {
 
 //                        .foregroundColor(Color.white)
                 }.modifier(TextFieldModifier())
-
+                
+                // error message
                 VStack{
                     
                     Text("\(self.error)").modifier(Error())
@@ -58,7 +66,11 @@ struct LoginView: View {
                     }
                     
                 }.frame(width: 300, height: 5, alignment: .center)
+                
+                // link to homeview
                 NavigationLink(destination: HomeUIView(), isActive: $isShowingHomeView) { EmptyView() }
+                
+                // button to lookup database
                 Button(action:{
                     //do the checking and then lookup the firebase and then validate the user then navigate to the HomeUIVIew
                     
@@ -72,6 +84,7 @@ struct LoginView: View {
                 
                     
             }.onAppear(perform: {
+                // get all score from database
                 self.fireDBHelper.getAllScore()
                 self.checkingUser = false
             })
@@ -79,6 +92,7 @@ struct LoginView: View {
         }.navigationViewStyle(StackNavigationViewStyle())//navigationview
     }
     
+    // check if textfields are empty
     func checking() -> Bool{
         if(self.username.isEmpty || self.password.isEmpty){
             //we need to inform the user
