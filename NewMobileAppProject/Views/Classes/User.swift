@@ -6,9 +6,10 @@
 //
 
 import Foundation
-
+ 
 
 struct User: Identifiable{
+    // variables 
     var id: String = UUID().uuidString
     var name: String
     var score: Int

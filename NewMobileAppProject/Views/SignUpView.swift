@@ -10,6 +10,8 @@ import Firebase
 
 struct SignUpView: View {
 
+    
+    // State variables used in the form
     @State private var username: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
@@ -24,6 +26,8 @@ struct SignUpView: View {
         NavigationView{
         ZStack
                {
+            /* ScrollView helps to scroll the screen when working in landscape mode ,
+             user can just scroll upwards on the screen to see the whole screen*/
                    ScrollView{
                VStack(spacing: CGFloat(verticalPadding)) {
                    Text("Asteroid Shooter").modifier(Header1())
@@ -59,7 +63,13 @@ struct SignUpView: View {
                        SecureField("Confirm password", text: $confirmPassword)
                            .autocapitalization(.none)
                    }.modifier(TextFieldModifier())
+                   
+                   
+                /* Placeholder to display the error message, if any occurs*/
+                   
                    Text("\(self.error)").modifier(Error())
+                   
+                   
                    HStack{
                        Text("Already have an account? ")
                        NavigationLink(destination: LoginView()){
@@ -69,6 +79,10 @@ struct SignUpView: View {
 
                }
                    NavigationLink(destination: HomeUIView(), isActive: $isShowingHomeView) { EmptyView() }
+                   
+                   /* On the click of the button all the error checking will be performed
+                    if successful -> navigate to the home page
+                    if not successful -> show a prompt to the user with the error message*/
                    Button(action:{
                        if(self.checking()){
                       // AddInfo(UserName: username, Email: email, Password: password, ConfirmPassword: confirmPassword)
@@ -89,12 +103,20 @@ struct SignUpView: View {
         }.navigationViewStyle(StackNavigationViewStyle())
         
     }
+    /* this method is updating the USer Info to cloud Firestore into the "Scores" collection the data will
+     be saved in a JSON format with key-value pairs*/
     
     func AddInfo(UserName: String, Email: String, Password: String, ConfirmPassword: String, Score: Int) -> Bool{
         let db = Firestore.firestore()
         db.collection("Scores").document().setData(["userName": UserName, "email": Email, "password": Password, "confirmPassword": ConfirmPassword, "score" : Score])
         return true
     }
+    
+    /* Error Checking
+     checking() checks some of the possible errors that could occur
+     for example, password and confirm password do not match or user leaves any of the information empty, in that
+     case user will not be allowed to navigate to the next page unless corrext information is not added
+     */
     
     func checking() -> Bool{
         if(self.username.isEmpty || self.email.isEmpty || self.password.isEmpty || self.confirmPassword.isEmpty){
