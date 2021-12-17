@@ -19,16 +19,17 @@ public struct People: Codable, Hashable{
 
 public class GetData: ObservableObject {
   
+    // get the info from the table People
   @Published var people = [People]()
     
     init() {
-          
+          // php URL to connect to the server add fetch the info
         let url = URL(string: "https://malhanro.dev.fast.sheridanc.on.ca/project/sqlToJson.php")!
-      
+      //This method will run the task asynchronously
         URLSession.shared.dataTask(with: url) {(data, response, error) in
             do {
                 if let peopleData = data {
-                    
+             // decode JSON data from the People table
                     let decodedData = try JSONDecoder().decode([People].self, from: peopleData)
                     DispatchQueue.main.async {
                         print(decodedData)

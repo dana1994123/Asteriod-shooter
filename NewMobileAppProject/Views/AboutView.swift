@@ -12,6 +12,7 @@ struct AboutView: View {
     var body: some View {
         HStack {
                 VStack{
+                    /* displays the info of the user after fetching from the table*/
                     Text("Name: \(person.Name)")
                         .font(.headline)
                         .foregroundColor(.black)
@@ -29,13 +30,14 @@ struct AboutView: View {
 }
 
 struct ListView: View {
+    //call the GetData Swift Class
     @ObservedObject var fetch = GetData()
     var body: some View {
         ZStack{
             Image("bg2").resizable().frame(width: 1000, height: 1000, alignment: .center).opacity(0.8)
             VStack{
                 Image("aboutus")
-
+//iterate over all the people 
                 ForEach(fetch.people, id: \.self){ p in
                     AboutView(person: p)
                 }
