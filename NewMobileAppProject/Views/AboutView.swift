@@ -13,6 +13,7 @@ struct AboutView: View {
         HStack {
                 VStack{
                     /* displays the info of the user after fetching from the table*/
+                   
                     Text("Name: \(person.Name)")
                         .font(.headline)
                         .foregroundColor(.black)
@@ -22,10 +23,9 @@ struct AboutView: View {
                         .font(.subheadline)
                         .foregroundColor(.yellow)
                      .frame(width: 300, height: 25, alignment: .center)
+                    }
                     
-                }
-                    
-                }.frame(width: 300, height: 60, alignment: .center)//hstack
+                }.frame(width: 300, height: 50, alignment: .center)//hstack
     }
 }
 
