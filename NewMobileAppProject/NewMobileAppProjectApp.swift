@@ -13,6 +13,7 @@ import FirebaseFirestore
 struct NewMobileAppProjectApp: App {
     let colors = Colors()
     let fireDBHelper : FireDBHelper
+    var images = ImagesInstruction()
     
     init(){
         FirebaseApp.configure()
@@ -20,7 +21,7 @@ struct NewMobileAppProjectApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(colors).environmentObject(fireDBHelper)
+            ContentView().environmentObject(colors).environmentObject(fireDBHelper).environmentObject(images)
         }
     }
 }

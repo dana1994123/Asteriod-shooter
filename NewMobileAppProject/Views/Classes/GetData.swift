@@ -14,6 +14,25 @@ public struct People: Codable, Hashable{
     public func hash(into hasher: inout Hasher) {
         hasher.combine(Name)
     }
+    
+    public func encode(with coder : NSCoder){
+        coder.encode(self.Name, forKey: "name")
+        coder.encode (self.Bio , forKey : "bio")
+        
+    }
+    mutating func initWithData(name: String, bio : String  ){
+        self.Name = name
+        self.Bio = bio
+        
+    }
+    
+
+    init(){
+        self.ID = ""
+        self.Name=""
+        self.Bio = ""
+        
+    }
 }
 
 

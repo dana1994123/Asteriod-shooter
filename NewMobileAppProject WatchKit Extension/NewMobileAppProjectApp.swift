@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct NewMobileAppProjectApp: App {
+    var images = ImagesInstruction()
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView().environmentObject(images)
             }
         }
 
