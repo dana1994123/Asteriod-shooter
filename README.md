@@ -10,10 +10,10 @@
 
 Asteroid Shooter
 Team: RyanRoopJashan
-Ryan Haire (991448186)
-Roop Malhans (991584154)
-Jashanpreet Singh (991589630)
-Dana Aljamal (991541439)
+Ryan Haire 
+Roop Malhans 
+Jashanpreet Singh 
+Dana Aljamal 
 Sheridan College Institute of Technology and Advanced Learning
 Submitted To: Jawaad Sheikh
 29 October, 2021
